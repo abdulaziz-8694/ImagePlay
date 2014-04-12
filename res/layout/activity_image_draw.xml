@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ImageDraw" >
+
+	
+
+<RelativeLayout
+	android:id="@+id/buttons"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" >
+
+	<Button
+		android:id="@+id/capture"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/camera_icon" />
+
+	<Button
+		android:id="@+id/load"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/capture"
+		android:layout_toRightOf="@id/capture"
+		android:background="@drawable/gallery_icon" />
+
+	<Button
+		android:id="@+id/process"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@+id/reset"
+		android:layout_alignParentRight="true"
+		android:text="Process" />
+
+	<Button
+		android:id="@+id/reset"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/load"
+		android:text="StartCrop" />
+</RelativeLayout>
+<com.example.imageplay2.CropView
+		android:id="@+id/image"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:scaleType="fitCenter"
+		android:layout_centerInParent="true"
+		android:layout_below="@id/buttons"/>
+
+</RelativeLayout>

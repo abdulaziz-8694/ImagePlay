@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item
+		android:id="@+id/action_settings"
+		android:orderInCategory="100"
+		android:showAsAction="ifRoom"
+		android:icon="@drawable/settings_icon"/>
+	<item 
+		android:id="@+id/effects"
+		android:icon="@drawable/effects_icon"
+		android:showAsAction="ifRoom">
+		<menu>
+			<item 
+				android:id="@+id/none"
+				android:title="None"/>
+			<item 
+				android:id="@+id/blur"
+				android:title="Blur"/>
+			<item
+				android:id="@+id/greyscale"
+				android:title="Greyscale"/>
+			<item 
+				android:id="@+id/edge"
+				android:title="Edge Detection"/>
+			<item
+				android:id="@+id/negative"
+				android:title="Ngative"/>
+			<item 
+				android:id="@+id/sepia"
+				android:title="Sepia"/>
+			<item
+				android:id="@+id/noise"
+				android:title="Noise"/>
+		</menu>
+	</item>
+
+</menu>
